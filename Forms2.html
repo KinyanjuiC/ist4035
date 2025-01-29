@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USIU Advanced Web Development Evaluation Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: left;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        form {
+            width: 70%;
+            max-width: 700px; /* Limit the maximum width */
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #e6f7ff;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            height: 65px; 
+        }
+        .checkbox-group {
+            margin-top: 10px;
+        }
+        .checkbox-group input {
+            width: auto;
+            margin-right: 10px;
+        }
+        .file-upload {
+            margin-top: 10px;
+        }
+        .button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>USIU Advanced Web Development Evaluation Form</h1>
+
+    <form>
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+
+        <label for="student-id">Student ID:</label>
+        <input type="text" id="student-id" name="student-id" placeholder="Enter your USIU student ID" required>
+
+        <label for="usiu-email">USIU Email Address:</label>
+        <input type="email" id="usiu-email" name="usiu-email" placeholder="Enter your USIU email" required>
+
+        <label for="github-url">GitHub Profile URL:</label>
+        <input type="url" id="github-url" name="github-url" placeholder="Enter your GitHub profile URL" required>
+
+        <label for="phone-number">Local Phone Number:</label>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" style="width:20px; height:20px; vertical-align:middle;">
+        <input type="tel" id="phone-number" name="phone-number" placeholder="+2547XX XXX XXX" required>
+
+        <label for="nairobi-problem">1. Nairobi-specific Problem Solving:</label>
+        <textarea id="nairobi-problem" name="nairobi-problem" placeholder="Describe your API security and scalability solution for Nairobi" required></textarea>
+
+        <label for="js-framework">2. Select the Best JavaScript Framework for real-time Nairobi news aggregation:</label>
+        <select id="js-framework" name="js-framework" required>
+            <option value="react">React</option>
+            <option value="angular">Angular</option>
+            <option value="vue">Vue.js</option>
+            <option value="svelte">Svelte</option>
+            <option value="ember">Ember</option>
+            <option value="backbone">Backbone.js</option>
+        </select>
+
+        <label>3. Which Laravel optimization method is best for a Nairobi e-commerce startup?</label>
+        <div class="checkbox-group">
+            <input type="checkbox" id="database-caching" name="laravel-optimization" value="database-caching">
+            <label for="database-caching">Database Caching</label>
+
+            <input type="checkbox" id="queues-job-scheduling" name="laravel-optimization" value="queues-job-scheduling">
+            <label for="queues-job-scheduling">Queues & Job Scheduling</label>
+
+            <input type="checkbox" id="horizontal-scaling" name="laravel-optimization" value="horizontal-scaling">
+            <label for="horizontal-scaling">Horizontal Scaling</label>
+        </div>
+
+        <label for="past-project">4. Upload a link to your past project (if available):</label>
+        <input type="file" id="past-project" name="past-project" class="file-upload" accept=".html, .zip, .pdf">
+
+        <label for="mpesa-host">5. Select a Kenyan Hosting provider that supports M-Pesa payments:</label>
+        <select id="mpesa-host" name="mpesa-host" required>
+            <option value="Safaricom-cloud">Safaricom cloud</option>
+            <option value="NovaHost">NovaHost</option>
+            <option value="Mango.ke">Mango.ke</option>
+            <option value="Webhost">Webhost</option>
+            <option value="Nescom">Nescom</option>
+        </select>
+
+        <label for="webapp-optimization">6. How would you optimize a web app for Nairobi users on 2G/3G netorks?:</label>
+        <textarea id="webapp-optimization" name="webapp-optimization" placeholder="Explain using PWA, Lazy loading and CDN strategies" required></textarea>
+
+        <label for="webapp-optimization">7. Name two Kenyan tech startups actively hiring full-stack developers:</label>
+        <input type="text" id="webapp-optimization" name="webapp-optimization" placeholder="Example: Cellulant, Twiga Foods" required></input>
+
+        <label for="webapp-optimization">8. Name two Kenyan freelancing platforms for web developers Upwork/Fiverr:</label>
+        <input type="text" id="webapp-optimization" name="webapp-optimization" placeholder="Example: Kuhustle, WorkPay Africa" required></input>
+
+        <div class="checkbox-group"></div>
+            <label for="certify">I certify that all responses are original and not AI-generated</label>
+            <input type="checkbox" id="certify" name="certify" required>
+        </div>
+        <button type="submit" class="button">Submit</button>
+    </form>
+</body>
+</html>
