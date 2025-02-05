@@ -4,11 +4,17 @@
 
 <h1>My First JavaScript</h1>
 
-<button type="button"
-onclick="document.getElementById('js1').innerHTML = Date()">
-Click me to display Date and Time.</button>
+<button type="button" onclick="showDate()">
+Click here to display the current Date and Time.
+</button>
 
-<p id="js1"></p>
+<p id="demo"></p>
+
+<script>
+function showDate() {
+    document.getElementById('demo').innerHTML = Date();
+}
+</script>
 
 </body>
-</html> 
+</html>
