@@ -1,20 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EatNow Cafe Digital Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        input, button {
+            padding: 8px;
+            margin: 5px 0;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .console {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
 <body>
+    <div class="container">
+        <h1>EatNow Cafe</h1>
+        
+        <!-- Step 1: Name Input -->
+        <div class="section">
+            <h3>Step 1: Enter Your Name</h3>
+            <input type="text" id="nameInput" placeholder="Your first name">
+            <button onclick="handleName()">Submit</button>
+            <div id="welcomeMessage"></div>
+        </div>
 
-<h1>My First JavaScript</h1>
+        <!-- Step 2 & 3: Menu Display -->
+        <div class="section">
+            <h3>Menu Items</h3>
+            <div id="menuDisplay"></div>
+        </div>
 
-<button type="button" onclick="showDate()">
-Click here to display current Date and Time.
-</button>
+        <!-- Step 4: Add New Dish -->
+        <div class="section">
+            <h3>Suggest a New Dish</h3>
+            <input type="text" id="dishInput" placeholder="Dish name">
+            <button onclick="handleNewDish()">Submit Dish</button>
+            <div id="dishMessage"></div>
+        </div>
 
-<p id="demo"></p>
+        <!-- Console Output -->
+        <div class="section">
+            <h3>System Console</h3>
+            <div class="console" id="console"></div>
+        </div>
+    </div>
 
-<script>
-function showDate() {
-    document.getElementById('demo').innerHTML = Date();
-}
-</script>
+    <script>
+        let userName = "Guest";
+        const menu = ["Grilled Matumbo & Rice", "Roasted Beef & Ugali", "Tilapia Fry with Uagli & Sukuma Wiki", "Mukimo & Chicken", "Chapati with Beef stew"];
 
+        function logToConsole(message) {
+            const consoleDiv = document.getElementById('console');
+            consoleDiv.innerHTML += `> ${message}\n`;
+            consoleDiv.scrollTop = consoleDiv.scrollHeight;
+        }
+
+        function handleName() {
+            const nameInput = document.getElementById('nameInput').value;
+            userName = nameInput.trim() || "Guest";
+            
+            document.getElementById('welcomeMessage').innerHTML = 
+                `<p>Welcome ${userName} to EatNow cafe!</p>`;
+            
+            // Display menu
+            const menuDisplay = document.getElementById('menuDisplay');
+            menuDisplay.innerHTML = '<ol>' + menu.map(item => `<li>${item}</li>`).join('') + '</ol>';
+            
+            logToConsole(`User identified as: ${userName}`);
+            logToConsole('Initial menu displayed');
+        }
+
+        function handleNewDish() {
+            const dishInput = document.getElementById('dishInput');
+            const newDish = dishInput.value.trim();
+            
+            if (!newDish) {
+                logToConsole("Invalid input. No dish was added.");
+                document.getElementById('dishMessage').innerHTML = 
+                    '<p style="color: red">Please enter a valid dish name</p>';
+                return;
+            }
+
+            menu.push(newDish);
+            document.getElementById('menuDisplay').innerHTML = 
+                '<ol>' + menu.map(item => `<li>${item}</li>`).join('') + '</ol>';
+            
+            logToConsole(`New dish added: ${newDish}`);
+            logToConsole('Menu updated successfully');
+            
+            dishInput.value = '';
+            document.getElementById('dishMessage').innerHTML = 
+                '<p style="color: green">Dish added successfully!</p>';
+        }
+    </script>
 </body>
 </html>
