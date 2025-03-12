@@ -35,7 +35,7 @@ function borrowBook(bookId) {
     let book = books.find(b => b.id === bookId);
     if (book && book.isAvailable) {
         book.isAvailable = false;
-        alert('You have borrowed "${book.title}".');
+        alert(`You have borrowed "${book.title}".`);
         displayBooks();
     }
 }
@@ -45,7 +45,7 @@ function returnBook(bookId) {
     let book = books.find(b => b.id === bookId);
     if (book && !book.isAvailable) {
         book.isAvailable = true;
-        alert('You have returned "${book.title}".');
+        alert(`You have returned "${book.title}".`);
         displayBooks();
     }
 }
