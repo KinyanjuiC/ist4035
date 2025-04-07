@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../ist4035MIDSEM"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ist4035"
+	}
+}
