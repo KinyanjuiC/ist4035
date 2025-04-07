@@ -3,46 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Home | My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="dashboard">
-        <!-- Sidebar Navigation -->
         <nav class="sidebar">
             <div class="profile-pic">
-                <img src="your-photo.jpg" alt="My Profile Picture">
+                <img src="your-photo.jpg" alt="Profile Picture">
             </div>
             <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
-        <!-- Main Content -->
         <main class="content">
-            <section id="home" class="page active">
-                <h1>Welcome to My Website</h1>
-                <div class="introduction">
-                    <div class="bio">
-                        <h2>About Me</h2>
-                        <p>
-                            Hi! I'm Collins, a passionate IT student based in Kenya. 
-                            With 4+ years of experience in computer science, I love creating websites. 
-                        </p>
-                        <p>
-                            My skills include:
-                            <ul>
-                                <li>Coding</li>
-                                <li>Problem solving</li>
-                                <li>Multitasking</li>
-                            </ul>
-                        </p>
+            <section class="hero">
+                <h1>Welcome to My Digital Space</h1>
+                <p class="tagline">IT Professional & Passionate Developer</p>
+                <div class="it-icons">
+                    <i class="fas fa-cloud fa-2x"></i>
+                    <i class="fas fa-shield-alt fa-2x"></i>
+                    <i class="fas fa-database fa-2x"></i>
+                    <i class="fas fa-code fa-2x"></i>
+                </div>
+                <blockquote>
+                    "Technology is best when it brings people together." - Matt Mullenweg
+                </blockquote>
+            </section>
+
+            <section class="quick-intro">
+                <h2>Latest Updates</h2>
+                <div class="highlights">
+                    <div class="card">
+                        <h3>New Project Launch</h3>
+                        <p>Mobile Attendance Tracker in development</p>
                     </div>
-                    <div class="home-image">
-                        <img src="your-photo.jpg" alt="My Profile Picture">
+                    <div class="card">
+                        <h3>Skills Update</h3>
+                        <p>Recently certified in Cybersecurity Fundamentals.</p>
+                        <p>Artificial Intelligence/Machine Learning.</p>
+                        <p>Understanding hardware-software integration.</p>
                     </div>
                 </div>
             </section>

@@ -114,6 +114,64 @@ body {
     object-fit: cover;
 }
 
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.tagline {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+
+.it-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+/* Quick Intro Section */
+.quick-intro {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.card {
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+:root {
+    --primary-dark: #2c3e50;    /* Navy Blue */
+    --primary-main: #3498db;    /* Vibrant Blue */
+    --accent-color: #2ecc71;    /* Fresh Green */
+    --text-primary: #333;
+    --text-secondary: #666;
+    --background-light: #f8f9fa;
+  }
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .dashboard {
