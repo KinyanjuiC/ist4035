@@ -567,6 +567,11 @@ input:checked + .slider:before {
         width: 100%;
         height: auto;
         position: relative;
+        padding: 10px 20px;
+        background-color: #2c3e50;
+        border-bottom: 1px solid #ccc;
+        transform: none;
+        transition: none;
     }
 
     .content {
@@ -574,17 +579,31 @@ input:checked + .slider:before {
         padding: 20px;
     }
 
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        gap: 10px; 
+    }
+
     .nav-links li {
-        margin: 10px 0;
+        margin: 0;
+    }
+
+    .nav-links a {
+        font-size: 1rem; 
+        padding: 8px 12px;
     }
 
     .profile-pic img {
-        width: 100px;
-        height: 100px;
+        width: 80px; 
+        height: 80px;
+        margin: 0 auto; 
     }
 
     .theme-toggle {
         justify-content: center;
+        margin-top: 10px;
     }
 
     .introduction {

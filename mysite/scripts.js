@@ -46,4 +46,12 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 500);
         });
     });
+
+    // Ensure the sidebar is visible on page load
+    const sidebar = document.querySelector('.sidebar');
+    if (sidebar) {
+        sidebar.style.transform = 'none'; // Ensure no transform is applied
+        sidebar.style.display = 'block'; // Ensure the sidebar is displayed
+        sidebar.classList.remove('hidden'); // Remove any hidden class if it exists
+    }
 });
