@@ -113,6 +113,26 @@ body {
     object-fit: cover;
 }
 
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.skills-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+
+.skills-list li i {
+    color: var(--primary-main); 
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
 .hero {
     text-align: center;
     padding: 4rem 2rem;
