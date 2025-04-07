@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Tech Insights</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+    <div class="dashboard">
+        <nav class="sidebar">
+            <div class="profile-pic">
+                <img src="your-photo.jpg" alt="Profile Picture">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section class="blog-section">
+                <h1 class="section-title">Tech Blog</h1>
+                
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-badge">New</div>
+                        <img src="blog-ai.jpg" alt="AI in Web Development" class="blog-image">
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">March 15, 2025</span>
+                                <span class="blog-category">Web Development</span>
+                            </div>
+                            <h3 class="blog-title">Implementing AI in Modern Web Apps</h3>
+                            <p class="blog-excerpt">Exploring how TensorFlow.js can bring machine learning capabilities to frontend applications...</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <img src="blog-security.jpg" alt="Cybersecurity" class="blog-image">
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">April 2, 2025</span>
+                                <span class="blog-category">Security</span>
+                            </div>
+                            <h3 class="blog-title">Essential Security Practices for Developers</h3>
+                            <p class="blog-excerpt">A comprehensive guide to implementing OAuth 2.0 and JWT authentication...</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

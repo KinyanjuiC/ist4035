@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Tech Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+    <div class="dashboard">
+        <nav class="sidebar">
+            <div class="profile-pic">
+                <img src="your-photo.jpg" alt="Profile Picture">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html"  class="active">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section class="portfolio-section">
+                <h1 class="section-title">My Projects</h1>
+                
+                <div class="project-grid">
+                    <!-- TaskSync Project -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3>TaskSync Collaboration Platform</h3>
+                            <div class="tech-stack">
+                                <span class="tech-badge">Django</span>
+                                <span class="tech-badge">React</span>
+                                <span class="tech-badge">PostgreSQL</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Team task management system with real-time collaboration features
+                        </p>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check-circle"></i> JWT Authentication</li>
+                            <li><i class="fas fa-check-circle"></i> REST API Integration</li>
+                            <li><i class="fas fa-check-circle"></i> Agile Board Interface</li>
+                        </ul>
+                        <div class="project-actions">
+                            <a href="https://github.com/KinyanjuiC/TaskSync" class="project-btn" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Mobile Attendance Tracker -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3>Mobile Attendance Tracker</h3>
+                            <div class="tech-stack">
+                                <span class="tech-badge">React Native</span>
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">Firebase</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Geolocation-based attendance system with facial recognition
+                        </p>
+                        <div class="project-status">
+                            <span class="status-indicator in-progress"></span>
+                            Estimated Completion: Q4 2024
+                        </div>
+                        <ul class="project-features">
+                            <li><i class="fas fa-map-marker-alt"></i> GPS Tracking</li>
+                            <li><i class="fas fa-camera"></i> Face Recognition API</li>
+                            <li><i class="fas fa-chart-line"></i> Analytics Dashboard</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
