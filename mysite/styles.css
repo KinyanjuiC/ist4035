@@ -574,6 +574,19 @@ input:checked + .slider:before {
         padding: 20px;
     }
 
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .profile-pic img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .theme-toggle {
+        justify-content: center;
+    }
+
     .introduction {
         flex-direction: column;
     }
@@ -581,6 +594,14 @@ input:checked + .slider:before {
     .home-image img {
         width: 200px;
         height: 200px;
+    }
+
+    .bio h2 {
+        font-size: 1.5rem;
+    }
+
+    .bio p {
+        font-size: 1rem;
     }
 
     .mobile-menu-toggle {
@@ -608,8 +629,21 @@ input:checked + .slider:before {
         grid-template-columns: 1fr;
     }
 
+    .project-card {
+        padding: 1rem;
+    }
+
+    .tech-badge {
+        font-size: 0.75rem;
+        padding: 0.2rem 0.5rem;
+    }
+
     .blog-grid {
         grid-template-columns: 1fr;
+    }
+
+    .blog-card {
+        padding: 1rem;
     }
     
     .blog-image-container {
@@ -618,5 +652,82 @@ input:checked + .slider:before {
     
     .blog-content {
         padding: 1.2rem;
+    }
+
+    .hero {
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .hero .intro {
+        font-size: 1.2rem;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero .tagline {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+
+    .it-icons {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    blockquote {
+        font-size: 0.9rem;
+        margin: 1rem auto;
+    }
+
+    .quick-intro {
+        padding: 1rem;
+    }
+
+    .highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 1rem;
+    }
+
+    .info-card {
+        padding: 1rem;
+    }
+
+    .social-links {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    body.dark-mode .hero {
+        padding: 2rem 1rem;
+    }
+
+    body.dark-mode .quick-intro {
+        padding: 1rem;
+    }
+
+    body.dark-mode .card {
+        padding: 1rem;
+    }
+
+    body.dark-mode .contact-form {
+        padding: 1rem;
+    }
+
+    body.dark-mode .info-card {
+        padding: 1rem;
     }
 }
