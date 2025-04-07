@@ -420,6 +420,31 @@ body.dark-mode .card {
     background-color: #252525; 
     color: #e0e0e0; 
 }
+body.dark-mode .skills-list li {
+    color: #ffffff; 
+}
+
+body.dark-mode .skills-list li i {
+    color: #2ecc71; 
+}
+body.dark-mode .hero {
+    background: linear-gradient(135deg, #1e1e1e, #121212); /* Dark gradient background */
+    color: #ffffff; /* White text for better contrast */
+    border-radius: 10px;
+}
+
+body.dark-mode .hero .intro {
+    color: #f0f0f0;
+}
+
+body.dark-mode .hero .tagline {
+    color: #cccccc; 
+}
+
+body.dark-mode .hero blockquote {
+    color: #aaaaaa; 
+    border-left: 4px solid #3498db; 
+}
 /* About Page */
 body.dark-mode .introduction {
     background-color: #1e1e1e;
